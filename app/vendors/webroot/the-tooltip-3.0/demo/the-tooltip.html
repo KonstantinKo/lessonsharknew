@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<title>The Tooltip</title>
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+	<link href="../css/the-tooltip.css" rel="stylesheet" />
+	<style>
+	body{background-image:url(images/white_texture.png);color:#222222;font-family:"Open Sans",sans-serif;font-size:15px;line-height:1.5;margin:0 auto 250px auto;max-width:640px;padding:0 50px;}
+	details{display:block;margin:50px 0 0 0;}details pre{background-color:rgba(0, 0, 0, 0.05) !important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;margin:10px 0 0 0;padding:30px;white-space:pre-wrap;}details pre mark{background-color:transparent;color:olive;}
+	details summary{background-color:#222222;border-radius:40px;color:#FFFFFF;cursor:pointer;display:block;font-size:13px;height:40px;line-height:40px;text-align:center;width:40px;}details summary::-webkit-details-marker{display:none;}
+	figure{display:inline-block;margin:0;}figure img{border:#000000 solid 1px;max-width:200px;}
+	h1{font-size:100px;margin:0 0 50px -10px;text-shadow:0 2px 0 #CCCCCC;}
+	h2{border-bottom:#000000 solid 1px;font-size:20px;font-weight:normal;margin:100px 0 25px 0;padding:0 0 10px 0;}
+	header{display:block;margin:0 0 250px 0;text-align:right;}header h1{background-color:#222222;border-bottom:#000000 solid 1px;color:#FFFFFF;display:inline-block;font-size:15px;margin:0;padding:20px 0;text-align:center;text-shadow:none;width:200px;}
+	img{display:block;}
+	section{display:block;}section+section{margin-top:300px;}
+	.the-tooltip :last-child{font-weight:normal;text-align:left;text-transform:none;}
+	ul{list-style:none;margin:0 -10px;padding:0;}ul:after{clear:both;content:"";display:block;}
+	ul li{background-color:rgba(255, 255, 255, 0.3);-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);display:inline-block;color:#555555;cursor:default;float:left;font-size:11px;font-weight:bold;height:200px;line-height:200px;margin:10px;text-align:center;text-transform:uppercase;-webkit-transition:0.3s;-moz-transition:0.3s;-ms-transition:0.3s;-o-transition:0.3s;transition:0.3s;width:200px;}ul li:hover{background-color:#ffffff;-webkit-transition:0.3s;-moz-transition:0.3s;-ms-transition:0.3s;-o-transition:0.3s;transition:0.3s;}
+	@media screen and (max-width: 755px){body{width:420px;} h1{font-size:50px;margin:0 0 30px -5px;}}@media screen and (max-device-width: 480px){body{-webkit-text-size-adjust:none;}}
+	</style>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	</head>
+<body>
+
+
+<header>
+<h1>The Tooltip</h1>
+</header>
+
+
+<section>
+	<h1>Position</h1>
+	
+	<ul class="source-code">
+		<li class="the-tooltip top left full-width black">top left <span>Top left</span></li>
+		<li class="the-tooltip top center full-width black">top center <span>Top center</span></li>
+		<li class="the-tooltip top right full-width black show">top right <span>Top right</span></li>
+		<li class="the-tooltip bottom left full-width black">bottom left <span>Bottom left</span></li>
+		<li class="the-tooltip bottom center full-width black show">bottom center <span>Bottom center</span></li>
+		<li class="the-tooltip bottom right full-width black">bottom right <span>Bottom right</span></li>
+	</ul>
+</section>
+
+<section>
+	<h1>Width</h1>
+	
+	<p>* Auto width is not compatible with position center.</p>
+	
+	<ul class="source-code">
+		<li class="the-tooltip top left auto-width black">auto width* <span>Adjusts to the width of its content</span></li>
+		<li class="the-tooltip top center black">fixed width <span>Maintains its width (250 px in this case)</span></li>
+		<li class="the-tooltip top center full-width black show">full width <span>Adjusts to the width of its parent</span></li>
+	</ul>
+</section>
+
+<section>
+	<h1>Color</h1>
+	
+	<ul class="source-code">
+		<li class="the-tooltip top left full-width apple-green show">apple green <span>Apple green</span></li>
+		<li class="the-tooltip top left full-width apricot">apricot <span>Apricot</span></li>
+		<li class="the-tooltip top left full-width black">black <span>Black</span></li>
+		<li class="the-tooltip top left full-width bright-lavender">bright lavender <span>Bright lavender</span></li>
+		<li class="the-tooltip top left full-width carrot-orange show">carrot orange <span>Carrot orange</span></li>
+		<li class="the-tooltip top left full-width dark-midnight-blue">dark midnight blue <span>Dark midnight blue</span></li>
+		<li class="the-tooltip top left full-width eggplant show">eggplant <span>Eggplant</span></li>
+		<li class="the-tooltip top left full-width forest-green">forest green <span>Forest green</span></li>
+		<li class="the-tooltip top left full-width magic-mint">magic mint <span>Magic mint</span></li>
+		<li class="the-tooltip top left full-width mustard">mustard <span>Mustard</span></li>
+		<li class="the-tooltip top left full-width sienna show">sienna <span>Sienna</span></li>
+		<li class="the-tooltip top left full-width sky-blue">sky blue <span>Sky blue</span></li>
+	</ul>
+</section>
+
+<section>
+	<h1>Examples</h1>
+
+	<h2>Image caption</h2>
+	
+	<figure class="source-code the-tooltip bottom center full-width carrot-orange">
+		<img src="images/vegetable-girl.jpg" alt="" />
+		<figcaption>Vegetable girl</figcaption>
+	</figure>
+	
+	<h2>Image preview</h2>
+	
+	<a class="source-code the-tooltip top center black show" href="images/vegetable-girl.jpg">vegetable girl<span><img src="images/vegetable-girl.jpg" alt="" /></span></a>
+	
+	<h2>Paragraph</h2>
+	
+	<p class="source-code">Lorem Ipsum couldn't make it to this little paragraph party. We'll do just fine though, don't you think? Do You want a drink?<br />Now, let me introduce you to <mark class="the-tooltip top center dark-midnight-blue">Mark<span>Hello, how are you?</span></mark> and <em class="the-tooltip top center apricot show">Em <span>Hi! Just call me Em</span></em>ma &hellip;</p>
+</section>
+
+
+<script defer src="../js/the-tooltip.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script defer src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.4-min.js"></script>
+<script defer src="../js/selectivizr-min.js"></script>
+<![endif]-->
+
+
+<script defer src="js/demo.min.js"></script>
+</body>
+</html>

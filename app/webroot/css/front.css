@@ -1,0 +1,48 @@
+.feature_inner
+{
+	padding-left:20px;
+	font-size:15px;
+}
+
+.example_teacher
+{
+	padding-top: 10px;
+}
+
+.numbers_note
+{
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.chart_legend
+{
+	text-align: center;
+	padding-left: 90px;
+}
+
+.register_form
+{
+	margin-top: 42px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	border-radius: 4px 4px 4px 4px;
+	border: 2px solid #ccc;
+	
+}
+
+.terms
+{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	font-size: 14px;
+	color: #555;
+}
+
+.login_message
+{
+	padding-bottom: 15px;
+	font-size: 14px;
+}

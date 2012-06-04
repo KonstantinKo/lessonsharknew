@@ -1,0 +1,49 @@
+<?php
+	echo $javascript->link('jquery/jquery');    
+	echo $javascript->link('jquery/jquery.form'); 
+
+?>
+	  
+	<div class="main_containers_middle">
+		<?php echo $this->element('front/dashSide');?>
+			<div class="right_containre">
+         		<div class="sucessPrint">
+		  <?php  echo $session->flash(); ?>
+		</div>			  
+		<?php // echo $form->create('',array('id'=>'postStoreForm','controller'=>'Users','action'=>'addTrade','name'=>'frmCreate','enctype'=>'multipart/form-data')); ?>
+		 <?php echo $form->create('Trade', array('url' => '/Users/editTrade/'.base64_encode($tradeInfo['id'])));?>
+			<div class="login">Edit Trade</div>
+				<div style="float:left;margin-top:30px;">
+ 					<div  class="inputTextClass">
+						 <?php echo $form->input('symbol', array('label'=>'Company:','class'=>'text_box_register','value'=>$tradeInfo['symbol']));?>
+					</div>
+					
+					<div class="inputTextClass">
+						<?php echo $form->input('share_size', array('label'=>'Quantity:','class'=>'text_box_register','value'=>$tradeInfo['share_size']));?>
+					</div>
+					<div class="inputTextClass">
+						<?php echo $form->input('entry_price', array('label'=>'Price:','class'=>'text_box_register','value'=>$tradeInfo['entry_price']));?>
+					</div>
+					<div class="inputTextClass">
+						<div class="input text"><label for="UserEntryPrice">Trade Type:</label>
+							<select name="data[Trade][share_type]" class="text_box_register_select">
+								<option value="technical" <?php if($tradeInfo['share_type']=='technical') echo 'selected'?>>Technical </option>	
+								<option value="fundamental"  <?php if($tradeInfo['share_type']=='fundamental') echo 'selected'?>>Fundamental </option>	
+                        				</select>
+						</div>
+					</div>
+                    
+				
+					<div class="inputTextClass">
+						<div class="input text"><label for="UserEntryPrice">Notes:</label>
+							<textarea name="data[Trade][notes]" rows="6" cols="36" class="text_box_register_textarea"><?php echo $tradeInfo['notes'];?></textarea>
+						</div>
+					</div>
+					
+				
+				</div>
+			<div class="submit">
+				<input value="Edit Trade" type="submit" id="registerSub" class="butons" >
+			</div>
+			  <?php echo $form->end();?>
+            </div>

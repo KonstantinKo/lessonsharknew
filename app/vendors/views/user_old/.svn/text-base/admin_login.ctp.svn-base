@@ -1,0 +1,54 @@
+				
+        <!--[if !IE]>start login_wrapper<![endif]-->
+				<div id="login_wrapper">
+				<span class="red"><?php echo $session->flash(); ?></span>
+					<span class="extra1"> </span>
+					<div class="title_wrapper">
+						<h2>Please Login</h2>
+						<?php
+                /*echo $html->link(__('Forgot password?', true), array(
+                            'admin' => false,
+                            'controller' => 'users',
+                            'action' => 'forgot',
+                        ), array(
+                            'class' => 'forgot',
+                        ));
+                        */
+						?>
+					</div>
+    <?php echo $form->create('User', array('url' => array('controller' => 'users', 'action' => 'login')));?>
+						<fieldset>
+							<!--[if !IE]>start row<![endif]-->
+							<div class="row">
+								<label>Username:</label>
+								<span class="input_wrapper">
+									<?php echo $form->input('username', array('label'=>false, 'class'=>'text') ); ?>
+								</span>
+							</div>
+							<!--[if !IE]>end row<![endif]-->
+							<!--[if !IE]>start row<![endif]-->
+							<div class="row">
+								<label>Password:</label>
+								<span class="input_wrapper">
+									<?php echo $form->input('password', array('label'=>false, 'class'=>'text')); ?>
+								</span>
+							</div>
+							<!--[if !IE]>end row<![endif]-->
+							<!--[if !IE]>start row<![endif]
+							<div class="row">
+								<label class="inline"><input class="checkbox" name="" type="checkbox" value="" /> remember me on this computer</label>
+							</div>              -->
+							<!--[if !IE]>end row<![endif]-->
+							<!--[if !IE]>start row<![endif]-->
+								<div class="row">
+									<div class="inputs small_inputs">
+										<span class="button blue_button unlock_button"><span><span><em><span class="button_ico"></span>Login</em></span></span>
+                    <?php echo $form->end(__('Log In', true)); ?></span>
+										<a href="#" class="button gray_button"><span><span>Back to site</span></span></a> 
+									</div>
+								</div>
+								<!--[if !IE]>end row<![endif]-->
+						</fieldset>
+        <?php echo $form->end(); ?>
+				</div>
+				<!--[if !IE]>end login_wrapper<![endif]-->

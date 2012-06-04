@@ -1,0 +1,41 @@
+<div class="customers form">
+<?php
+
+// let the controller action decide weather to close the modalbox
+if (isset($closeModalbox) && $closeModalbox) echo "<div id='closeModalbox'></div>";
+
+// output an ajax or a normal form
+if ($ajax->isAjax()) {
+	// show ajax form
+	echo $ajax->form('User', 'post', array(
+		'model'    => 'User',
+		'url'      => array( 'controller' => 'users', 'action' => 'edit'),
+		'update'   => 'MB_content',
+		'complete' => 'closeModalbox()'
+	));
+} else {
+	// show default form
+	echo $form->create('User');
+}
+?>
+	<fieldset>
+	<?php
+		echo $form->input('id');
+    echo $form->input('lastname');
+    echo $form->input('firstname');
+    echo $form->input('username');
+    echo $form->input('password');
+    echo $form->input('reviewer_name');    
+  ?>
+     <label for="UserRole">Role</label><br >
+        <?php 
+              $options=array('admin'=>'Administrator','coder'=>'Coder');
+              echo $form->select('role',$options, null, null, false );
+        ?>    
+
+    <label for="UserSupervised">Supervised</label><br >
+    <?php echo $form->input('supervised', array('style'=>'margin-top:2px; padding: 2px;', 'label'=>false) );?> 
+
+	</fieldset>
+<?php echo $form->end('Submit');?>
+</div>

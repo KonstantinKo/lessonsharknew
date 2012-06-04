@@ -1,0 +1,27 @@
+				<!--[if !IE]>start main menu<![endif]-->
+				<div id="main_menu">
+					<ul>
+						<li>  
+							<span><span><?php echo $html->link('Dashboard','/admin/users/home');?></span></span>
+						</li>
+						<li>
+							<span><span><?php echo $html->link('Patients','/admin/patients');?></span></span>							
+						</li>
+						<li>
+							<span><span><?php echo $html->link('Users','/admin/users');?></span></span>							
+						</li>
+						<li>
+							<span><span><?php echo $html->link('Clients','/admin/clients');?></span></span>
+						</li>
+						<li>
+							<span><span><?php echo $html->link('Oasis','/admin/oasis');?></span></span>
+						</li>						
+						<li>
+							<span><span><?php echo $html->link('Types','/admin/types');?></span></span>
+						</li>
+						<li><span><span><?php echo $html->link('Daily Log','/admin/patients/dailylog');?></span></span></li>
+						<li><span><span><?php echo $html->link('Monthly Invoice','/admin/patients/montlyinvoice');?></span></span></li>
+						<li><span><span><?php echo $html->link('Help','/admin/help');?></span></span></li>
+					</ul>
+				</div>
+				<!-- end main menu -->

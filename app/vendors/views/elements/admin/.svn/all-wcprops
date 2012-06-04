@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/hma/!svn/ver/1/app/views/elements/admin
+END
+footer.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/hma/!svn/ver/1/app/views/elements/admin/footer.ctp
+END
+navigation.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/hma/!svn/ver/1/app/views/elements/admin/navigation.ctp
+END
+main_menu.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/hma/!svn/ver/21/app/views/elements/admin/main_menu.ctp
+END

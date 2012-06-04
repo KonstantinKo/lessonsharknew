@@ -1,0 +1,25 @@
+<?php
+echo "gurpreet";
+  $color = array(
+			'#687e9b',
+			'#c4ccd8',
+		    );
+		    
+		    $dataMultiple = array(array(0,1,2,3), array(4,5,6,7));
+		    
+		$this->GoogleChart->setChartAttrs(array(
+			    'type'         => 'lc',
+			    'title'     => '',
+			    'data'         => $dataMultiple,
+			    'size'         => array( 400, 200 ),
+			    'color'     => $color,
+			    'labelsXY'     => true,
+			    'min'        => array(min(array(0,1,2,3)),min(array(4,5,6,7))),
+			    'max'        => array(max(array(0,1,2,3)),max(array(4,5,6,7))),
+			    'legend'    => array('2008', '2009')
+			)
+		    );
+		    
+		    // Print chart
+		    echo $googleChart; 
+?>

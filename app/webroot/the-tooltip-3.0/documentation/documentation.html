@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>The Tooltip - documentation</title>
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" />
+	<link href="css/documentation.css" rel="stylesheet" />
+	<style>
+	body{color:#333333;font-family:"Open Sans",sans-serif;font-size:15px;height:100%;line-height:1.5;margin:0;min-width:1100px;}
+	h1{font-size:30px;margin:0 0 40px 0;}
+	html{height:100%;}
+	header{background-color:#222222;border-right:#000000 solid 3px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;color:#FFFFFF;display:block;position:relative;padding:50px;width:300px;float:left;z-index:1;}header h1 a{color:inherit;text-decoration:none;}
+	header nav{display:block;}header nav ul{list-style:none;margin:0;padding:0;}header nav ul li a{color:inherit;display:block;padding:3px 0;text-decoration:none;}
+	header nav ul+ul{border-top:#000000 solid 1px;margin-top:20px;padding-top:20px;}
+	[role="main"]{float:left;position:relative;min-height:100%;width:800px;z-index:0;}[role="main"] a{color:#6082B6;}
+	[role="main"]:before{background-color:#222222;border-right:#000000 solid 3px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;content:"";display:block;height:100%;left:-350px;position:absolute;top:0;width:350px;}
+	[role="main"] iframe{border:none;}
+	[role="main"] section{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;display:none;padding:50px;}[role="main"] section dl dd{margin:0 0 0 0;}[role="main"] section dl dd+dt{margin-top:15px;}
+	[role="main"] section dl dt{font-size:13px;font-weight:bold;margin:0;}
+	[role="main"] section dl,[role="main"] section ol,[role="main"] section ul{margin:30px;}
+	[role="main"] section h1+*{margin-top:0 !important;}
+	[role="main"] section h2{font-size:17px;margin:70px 0 30px 0;}
+	[role="main"] section h3{font-size:13px;margin:40px 0 15px 0;}
+	[role="main"] section:last-of-type{display:block;}
+	[role="main"] section mark{background:none;color:#808000;border-bottom:#CCCCCC dotted 1px;font-style:italic;}
+	[role="main"] section ol li+li,[role="main"] section ul li+li{margin-top:15px;}
+	[role="main"] section pre{background-color:#EEEEEE;font-family:Courier, monospace;padding:10px;white-space:pre-wrap;}
+	[role="main"] section [role="note"]:before{content:"Note: ";}
+	[role="main"] section table{border:#EEEEEE solid 1px;padding:20px;margin:30px 0 30px 0;width:100%;}[role="main"] section table thead{font-size:13px;font-weight:bold;}
+	[role="main"] section table tr td{padding:5px 20px;vertical-align:top;}[role="main"] section table tr td:first-child{padding-left:0;}
+	[role="main"] section:target{display:block;}[role="main"] section:target~section{display:none;}
+	[role="main"] .video-wrapper{height:0;overflow:hidden;padding-bottom:56.25%;padding-top:30px;position:relative;}[role="main"] .video-wrapper iframe{background-color:#000000;height:100%;left:0;position:absolute;top:0;width:100%;}
+	</style>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+<header>
+	<h1><a href="">The Tooltip</a></h1>
+	
+	<nav>
+		<ul>
+			<li><a href="#getting-started">Getting started</a></li>
+			<li><a href="#included">Included</a></li>
+			<li><a href="#integration">Integration</a></li>
+			<li><a href="#changing-the-js-selector">Changing the JS selector</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#support">Support</a></li>
+		</ul>
+		
+		<ul>
+			<li><a href="#classname-overview">Classname overview</a></li>
+			<li><a href="#changing-the-css-selector">Changing the CSS selector</a></li>
+			<li><a href="#customizations">Customizations</a></li>	
+		</ul>
+		
+		<ul>
+			<li><a href="#api">API</a></li>
+			<li><a href="#usage-in-a-less-stylesheet">Usage in a LESS stylesheet</a></li>
+			<li><a href="#building-a-custom-tooltip">Building a custom tooltip</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+<div role="main">
+	<section id="getting-started">
+		<h1>Getting started</h1>
+
+		<ol>
+			<li>Unzip your download, <mark>the-tooltip-3.0.zip</mark>.</li>
+			<li>Place the contents of the <mark>the-tooltip-3.0</mark> folder in your local or remote project folder.</li>
+			<li>Follow the steps under <a href="#integration">integration</a>.</li>
+		</ol>
+	</section>
+		
+	<section id="included">
+		<h1>Included</h1>
+		
+		<table>
+			<thead>
+				<tr>
+					<td>Path</td>
+					<td>Description</td>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>css/the-tooltip.css</td>
+					<td>CSS stylesheet</td>
+				</tr>
+				
+				<tr>
+					<td>demo/the-tooltip.html</td>
+					<td>Demo</td>
+				</tr>
+				
+				<tr>
+					<td>demo/images</td>
+					<td>Images used in the demo</td>
+				</tr>
+				
+				<tr>
+					<td>demo/js</td>
+					<td>JavaScript used in the demo</td>
+				</tr>
+				
+				<tr>
+					<td>documentaton/documentation.html</td>
+					<td>Documentation</td>
+				</tr>
+				
+				<tr>
+					<td>js/selectivizr-min.js</td>
+					<td>Selectivizr (bringing support for IE7 and IE8)</td>
+				</tr>
+				
+				<tr>
+					<td>js/the-tooltip.js</td>
+					<td>Support for touch devices</td>
+				</tr>
+				
+				<tr>
+					<td>js/the-tooltip.min.js</td>
+					<td>Support for touch devices, minified</td>
+				</tr>
+				
+				<tr>
+					<td>less/the-tooltip.less</td>
+					<td>LESS stylesheet</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	
+	<section id="integration">
+		<h1>Integration</h1>
+		
+		<p>Open the HTML document you want to integrate The Tooltip in.</p>
+		
+		<h3>Include the stylesheet</h3>
+		
+		<pre>&lt;link href=&quot;css/the-tooltip.css&quot; rel=&quot;stylesheet&quot; /&gt;</pre>
+		
+		<p>Paste the above code within the <mark>head</mark> tags.</p>
+		
+		<h3>Include the JavaScript file</h3>
+		
+		<pre>&lt;script defer src=&quot;js/the-tooltip.min.js&quot;&gt;&lt;/script&gt;</pre>
+		
+		<p>Paste the above code before the <mark>body</mark> closing tag.</p>
+		
+		<h3>Include Selectivizr</h3>
+		
+<pre>
+&lt;!--[if (gte IE 6)&amp;(lte IE 8)]&gt;
+&lt;script defer src=&quot;//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.4-min.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;js/selectivizr-min.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+</pre>
+		
+		<p>Paste the above code before the <mark>body</mark> closing tag.</p>
+		
+		<p role="note">Selectivizr requires the inclusion of one of the JavaScript libraries listed on its <a href="http://selectivizr.com">website</a>. If you are using any of those already, you can leave out the NWMatcher script.</p>
+	</section>
+	
+	<section id="changing-the-js-selector">
+		<h1>Changing the JavaScript selector</h1>
+		
+		<ol>
+			<li>Open <mark>the-tooltip.js</mark>.</li>
+			<li>Go to the last line.</li>
+			<li>Change <mark>.the-tooltip</mark> to your preferred selector, e.g. <mark>#id</mark>, <mark>.classname</mark>, <mark>tagname</mark>.</li>
+		</ol>
+	</section>
+	
+	<section id="faq">
+		<h1>FAQ</h1>
+		
+		<h2>Why is part of The Tooltip hidden?</h2>
+		
+		<p>If the parent element has <mark>overflow: hidden;</mark> set, The Tooltip is cut off if it overflows the edges of this element.</p>
+		
+		<h2>Can I make the background transparent?</h2>
+		
+		<p>Short answer: no.<br />With advanced customization, involving CSS gradients, you can make the background transparent so that it also fits with The Tooltip's pointer.</p>
+	</section>
+	
+	<section id="support">
+		<h1>Support</h1>
+		
+		<p>Questions, suggestions? Or issues?</p>
+		
+		<ul>
+			<li>Send an email to <a href="mailto:support@dadu.be">support@dadu.be</a>.</li>
+			<li>Or use the contact form on the DADU <a href="http://codecanyon.net/user/DADU">profile page on CodeCanyon</a>.</li>
+			<li>Or drop a comment on the product page on CodeCanyon.</li>
+		</ul>
+	</section>
+	
+	<section id="classname-overview">
+		<h1>Classname overview</h1>
+		
+		<p>This is the classname overview for <mark>the-tooltip.css</mark>:</p>
+		
+		<table>
+			<thead>
+				<tr>
+					<td>Classname</td>
+					<td>Description</td>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>auto-width</td>
+					<td>Adjusts to the width of its content. Not compatible with position center</td>
+				</tr>
+				
+				<tr>
+					<td>apple-green</td>
+					<td>Apple green color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>apricot</td>
+					<td>Apricot color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>black</td>
+					<td>Black color scheme</td>
+				</tr>
+			
+				<tr>
+					<td>bottom</td>
+					<td>Vertical position bottom</td>
+				</tr>
+				
+				<tr>
+					<td>bright-lavender</td>
+					<td>Bright lavender color scheme</td>
+				</tr>
+							
+				<tr>
+					<td>carrot-orange</td>
+					<td>Carrot orange color scheme</td>
+				</tr>
+			
+				<tr>
+					<td>center</td>
+					<td>Horizontal position center</td>
+				</tr>
+				
+				<tr>
+					<td>dark-midnight-blue</td>
+					<td>Dark midnight blue color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>eggplant</td>
+					<td>Eggplant color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>forest-green</td>
+					<td>Forest green color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>full-width</td>
+					<td>Adjusts to the width of its parent</td>
+				</tr>
+				
+				<tr>
+					<td>left</td>
+					<td>Horizontal position left</td>
+				</tr>
+				
+				<tr>
+					<td>magic-mint</td>
+					<td>Magic mint color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>mustard</td>
+					<td>Mustard color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>right</td>
+					<td>Horizontal position right</td>
+				</tr>
+				
+				<tr>
+					<td>sienna</td>
+					<td>Sienna color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>sky-blue</td>
+					<td>Sky blue color scheme</td>
+				</tr>
+				
+				<tr>
+					<td>top</td>
+					<td>Vertical position top</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	
+	<section id="changing-the-css-selector">
+		<h1>Changing the CSS selector</h1>
+		
+		<p>The default selector for The Tooltip is <mark>.the-tooltip</mark>. You may want to change this.</p>
+		
+		<ol>
+			<li>Open <mark>the-tooltip.css</mark>.</li>
+			<li>Do a search and replace with as search value <mark>.the-tooltip</mark> and replace value your preferred selector, e.g. <mark>#id</mark>, <mark>.classname</mark>, <mark>tagname</mark>.</li>
+			<li><a href="#changing-the-javascript-selector">Change the JavaScript selector</a> to match your chosen selector.</li>
+		</ol>
+	</section>
+	
+	<section id="customizations">
+		<h1>Customizations</h1>
+		
+		<p>A few pointers:</p>
+		
+		<ul>
+			<li>If you want to completely customize The Tooltip, go to <a href="#building-a-custom-tooltip">Building a custom tooltip</a>.</li>
+			<li>Make sure that the customizations are included after <mark>the-tooltip.css</mark>.</li>
+		</ul>
+		
+		<h2>General</h2>
+		
+		<p>You can customize The Tooltip via CSS, like so:</p>
+		
+<pre>
+.the-tooltip > :last-child {
+font-size: 15px;
+font-weight: bold;
+text-align: center;
+}
+</pre>
+	
+		<h2>Hiding the pointer</h2>
+
+<pre>
+.the-tooltip > :last-child:after,
+.the-tooltip > :last-child:before {
+border-width: 0;
+}
+</pre>
+	</section>
+	
+	<section id="api">
+		<h1>API</h1>
+		
+		<!--
+		Mixins
+		========== -->
+		
+		<h2>Mixins</h2>
+		
+		<h3>auto-width</h3>
+		
+		<pre>.auto-width;</pre>
+		
+		<p>Adjusts to the width of its content.</p>
+		
+		<p role="note">Auto width is not compatible with position center.</p>
+		
+		<h3>bottom</h3>
+		
+		<pre>.bottom;</pre>
+		
+		<p>Vertical position bottom.</p>
+		
+		<h3>center</h3>
+		
+		<pre>.center;</pre>
+		
+		<p>Horizontal position center.</p>
+		
+		<h3>color-scheme</h3>
+		
+		<pre>.color-scheme(@base-color, @color-percentage: 50%, @border-color-percentage: 15%);</pre>
+		
+		<p>Apply a color scheme.</p>
+		
+		<dl>
+			<dt>@base-color</dt>
+			<dd>A hexadecimal color value used as the base color for the text color and border color.</dd>
+			
+			<dt>@color-percentage</dt>
+			<dd>The contrast between the text color and the base color. <mark>100%</mark> represents black and <mark>-100%</mark> white.</dd>
+			
+			<dt>@border-color-percentage</dt>
+			<dd>The contrast between the border color and the base color.</dd>
+		</dl>
+		
+		<h3>full-width</h3>
+		
+		<pre>.full-width;</pre>
+		
+		<p>Adjusts to the width of its parent.</p>
+		
+		<h3>left</h3>
+		
+		<pre>.left;</pre>
+		
+		<p>Horizontal position left.</p>
+		
+		<h3>right</h3>
+		
+		<pre>.right;</pre>
+		
+		<p>Horizontal position right.</p>
+		
+		<h3>text-shadow</h3>
+		
+		<pre>.text-shadow(@color, @alpha);</pre>
+		
+		<p>Set a text shadow.</p>
+		
+		<dl>
+			<dt>@color</dt>
+			<dd>A hexadecimal color value.</dd>
+			
+			<dt>@alpha</dt>
+			<dd>The alpha level of the text shadow color.</dd>
+		</dl>
+		
+		<h3>top</h3>
+		
+		<pre>.top;</pre>
+		
+		<p>Vertical position top.</p>
+		
+		<!--
+		Options
+		========== -->
+		
+		<h2>Options</h2>
+		
+		<p role="note">Because of the way LESS works, options apply only if they are set in <mark>the-tooltip.less</mark>.</p>
+		
+		<h3>border-radius</h3>
+		
+		<pre>@border-radius: 5px;</pre>
+		
+		<h3>border-width</h3>
+		
+		<pre>@border-width: 1px;</pre>
+		
+		<h3>font-size</h3>
+		
+		<pre>@font-size: 17px;</pre>
+		
+		<p>The font size for text inside The Tooltip. Set to <mark>inherit</mark> to leave this up to the parent element.</p>
+		
+		<h3>margin</h3>
+		
+		<pre>@margin: 5px;</pre>
+		
+		<h3>padding</h3>
+		
+		<pre>@padding: 10px 20px;</pre>
+		
+		<h3>pointer-margin</h3>
+		
+		<pre>@pointer-margin: 20px;</pre>
+		
+		<p>The margin between the pointer and the left and right side of The Tooltip.</p>
+		
+		<h3>pointer-width</h3>
+		
+		<pre>@pointer-width: 10px;</pre>
+		
+		<p>Set to <mark>0</mark> if you want to hide the pointer completely.</p>
+		
+		<h3>transition-in-delay</h3>
+		
+		<pre>@transition-in-delay: 0s;</pre>
+		
+		<p>The delay in seconds before The Tooltip fades in.</p>
+		
+		<h3>transition-out-delay</h3>
+		
+		<pre>@transition-out-delay: 0s;</pre>
+		
+		<p>The delay in seconds before The Tooltip fades out.</p>
+		
+		<h3>width</h3>
+		
+		<pre>@width: 250px;</pre>
+		
+		<p>The width of The Tooltip. This is the outer width, so padding and borders will be subtracted from it.</p>
+	</section>
+	
+	<section id="usage-in-a-less-stylesheet">
+		<h1>Usage in a LESS stylesheet</h1>
+		
+		<h2>Importing</h2>
+		
+		<p>To start using the mixins, you first need to import <mark>the-tooltip.less</mark>:</p>
+		
+		<pre>@import url('the-tooltip.less');</pre>
+		
+		<h2>Mixin in</h2>
+		
+		<pre>#the-tooltip > .mixin;</pre>
+		
+		<p>The mixin is preceded by The Tooltip's <a href="http://lesscss.org">namespace</a>, <mark>#the-tooltip</mark>.<br />Replace <mark>mixin</mark> with the name of the mixin you want to call.</p>
+		
+		<h2>Example</h2>
+		
+<pre>
+@import url('the-tooltip.less');
+
+
+nav a {
+padding: 10px 20px;
+text-decoration: none;
+text-transform: uppercase;
+
+	#the-tooltip > .core;
+	#the-tooltip > .bottom;
+	#the-tooltip > .center;
+	#the-tooltip > .apple-green;
+}
+</pre>
+	</section>
+	
+	<section id="building-a-custom-tooltip">
+		<h1>Building a custom tooltip</h1>
+		
+		<p>Building a custom tooltip has some advantages over using <mark>the-tooltip.css</mark>:</p>
+		
+		<ul>
+			<li>Smaller file size.</li>
+			<li>You don't need to apply a collection of classnames like <mark>top left full-width apple-green</mark>.</li>
+			<li>Custom color schemes.</li>
+			<li>Options like border radius, padding, pointer width, etc. which you can adjust to better align The Tooltip with the design of your project.</li>
+		</ul>
+		
+		<p>These are the steps you can follow to generate a custom tooltip:</p>
+		
+		<ol>
+			<li>Go to <a href="http://dadu.be/less-css">dadu.be/less-css</a>.</li>
+			<li>Drag and drop <mark>the-tooltip.less</mark> into that web page.</li>
+			<li>Change the selector, <mark>#the-tooltip</mark> to your preferred selector, e.g. <mark>.tooltip</mark>. Also <a href="#changing-the-javascript-selector">change the JavaScript selector</a> to match your chosen selector.</li>
+			<li>Adjust any options you would like to adjust.</li>
+			<li>Mixin the core by typing <mark>.core;</mark> on a new line.</li>
+			<li>Mixin a vertical and horizontal position, e.g. <mark>.top; .left;</mark>.</li>
+			<li>Mixin a color scheme, e.g. <mark>.apple-green;</mark>.<br />Or create your own color scheme, e.g. <mark>.color-scheme(#D1E231, 40%);</mark>.</li>
+			<li>Copy the generated CSS code and paste it in your stylesheet.</li>
+		</ol>
+		
+		<h2>Video</h2>
+		
+		<div class="video-wrapper">
+			<iframe src="//www.youtube.com/embed/hAQ0znAfqNE?rel=0&amp;hd=1&amp;showinfo=0" allowfullscreen></iframe>
+		</div>
+	</section>
+	
+	<section>
+		<p>Thank you for choosing The Tooltip.</p>
+	</section>
+</div>
+
+
+</body>
+</html>

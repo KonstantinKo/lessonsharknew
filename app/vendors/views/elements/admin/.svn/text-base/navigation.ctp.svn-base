@@ -1,0 +1,25 @@
+<div id="navigation">
+	<ul>
+		<li>
+            <a href="#"><?php __('Airlines'); ?></a>
+            <ul>
+                <li><?php echo $html->link(__('List', true), array('plugin' => 0, 'controller' => 'airlines', 'action' => 'index')); ?></li>
+                <li><?php echo $html->link(__('Add Airline', true), array('plugin' => 0, 'controller' => 'airlines', 'action' => 'add')); ?></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><?php __('Images'); ?></a>
+            <ul>
+                <li><?php echo $html->link(__('List', true), array('plugin' => 0, 'controller' => 'images', 'action' => 'index')); ?></li>
+                <li><?php echo $html->link(__('Add Image', true), array('plugin' => 0, 'controller' => 'images', 'action' => 'add')); ?></li>
+            </ul>
+        </li> 
+        <li>
+            <a href="#"><?php __('Orders'); ?></a>
+            <ul>
+                <li><?php echo $html->link(__('Orders', true), array('plugin' => 0, 'controller' => 'orders', 'action' => 'index')); ?></li>
+            </ul>
+        </li>  
+               
+    </ul>
+</div>
