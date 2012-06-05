@@ -34,7 +34,7 @@
 	</div>
 	
 	<div class="input_form">
-		<?php echo $form->input('Profile.zip', array('label'=>'Zip code','class'=>'forem_part_first_inputs','div'=>'','maxlength' => 5));?>		
+		<?php echo $form->input('Profile.zip', array('label'=>'Zip code','class'=>'forem_part_first_zip','div'=>'','maxlength' => 5));?>		
 		<div class="clr"></div>
 	</div>
 	
